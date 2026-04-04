@@ -12,7 +12,7 @@
   --color-primary-light: #4e79b5;
   --color-primary-muted: #fafafa;
   --color-white: #ffffff;
-
+  --text-color-transparency: #ffffff98;
   --fs-xl: 3rem;
   --fs-lg: 2rem;
   --fs-md: 1.5rem;
@@ -181,4 +181,92 @@ nav ul li a {
   display: flex;
   flex-direction: row;
   gap: 4rem;
+}
+
+.promo-cards-container {
+  width: 100%;
+  display: grid;
+  margin-top: 1rem;
+  text-align: start;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.promo-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  min-height: 340px;
+  max-height: 340px;
+  border-radius: var(--border-radius-default);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.img-card-bg {
+  position: relative;
+  /* background-color: red; */
+  overflow: hidden;
+  /* background-image: url(../src/img/CCS.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  flex-shrink: 0;
+  color: var(--text-color-transparency);
+}
+
+.img-card-bg h2 {
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  line-height: 2rem;
+}
+
+.card-country-img {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  height: 200px;
+  flex-shrink: 0;
+  z-index: 0;
+}
+
+.promo-card-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.promo-card-info p {
+  line-height: 0;
+}
+
+.promo-card-info-city {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.flag-img {
+  border-radius: 100%;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.flag-img img {
+  width: 100%;
+}
+
+.price-info {
+  margin-top: auto;
+}
+
+.price {
+  color: var(--color-primary);
 }
