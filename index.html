@@ -35,7 +35,7 @@
           <li><a href="/#inicio">Inicio</a></li>
           <li><a href="/#sobre-nosotros">Nosotros</a></li>
           <li><a href="/#promociones">Promociones</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="/#contacto">Contacto</a></li>
         </ul>
       </nav>
       <a class="btn btn-cta" href="#">Reservar ahora</a>
@@ -260,7 +260,7 @@
           </div>
         </div>
       </section>
-      <section class="contact-section">
+      <section class="contact-section" id="contacto">
         <div class="contact-section-content">
           <span class="section-tag-inverse">Contacto</span>
           <h2 class="section-title-slogan">¿Tienes dudas?</h2>
@@ -271,7 +271,7 @@
           <div class="form-section">
             <form action="" method="POST">
               <div class="form-group">
-                <div>
+                <div class="input-item">
                   <label for="nombre"
                     >Nombre <span aria-hidden="true">*</span></label
                   >
@@ -284,7 +284,7 @@
                     autocomplete="given-name"
                   />
                 </div>
-                <div>
+                <div class="input-item">
                   <label for="apellido">Apellido</label>
                   <input
                     type="text"
@@ -297,38 +297,44 @@
               </div>
 
               <div class="form-group">
-                <label for="email"
-                  >Correo electrónico <span aria-hidden="true">*</span></label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="juan@email.com"
-                  required
-                  autocomplete="email"
-                />
-                <label for="telefono"
-                  >Teléfono <span aria-hidden="true">*</span></label
-                >
-                <input
-                  type="tel"
-                  id="telefono"
-                  name="telefono"
-                  placeholder="+34 600 000 000"
-                  required
-                  autocomplete="tel"
-                />
+                <div class="input-item">
+                  <label for="email"
+                    >Correo electrónico <span aria-hidden="true">*</span></label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="juan@email.com"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+                <div class="input-item">
+                  <label for="telefono"
+                    >Teléfono <span aria-hidden="true">*</span></label
+                  >
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="+34 600 000 000"
+                    required
+                    autocomplete="tel"
+                  />
+                </div>
               </div>
 
               <div class="form-group">
-                <label for="mensaje">Razón o mensaje</label>
-                <textarea
-                  id="mensaje"
-                  name="mensaje"
-                  rows="4"
-                  placeholder="Cuéntanos en qué podemos ayudarte..."
-                ></textarea>
+                <div class="message-form-section">
+                  <label for="mensaje">Razón o mensaje</label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="4"
+                    placeholder="Cuéntanos en qué podemos ayudarte..."
+                  ></textarea>
+                </div>
               </div>
 
               <button type="submit" class="btn btn-cta">Enviar</button>

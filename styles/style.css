@@ -6,7 +6,7 @@
 }
 
 :root {
-  font-family: "Poppins", sans-serif;
+  --main-font-family: "Poppins", sans-serif;
 
   --color-primary: #0c1a2e;
   --color-primary-light: #4e79b5;
@@ -26,6 +26,7 @@
 
 body {
   background-color: var(--color-primary-muted);
+  font-family: var(--main-font-family);
 }
 
 h1 {
@@ -44,6 +45,12 @@ h4 {
 }
 p {
   font-size: var(--fs-base);
+}
+
+button {
+  font-family: var(--main-font-family);
+  border: none;
+  cursor: pointer;
 }
 
 .section-tag {
@@ -311,8 +318,52 @@ nav ul li a {
   color: var(--color-primary);
   border-radius: var(--border-radius-default);
 }
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
 .form-section input {
   border-radius: var(--border-radius-default);
-  padding: 8px;
+  padding: 14px;
+  border: 1px solid var(--color-primary-light);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.message-form-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  border-radius: var(--border-radius-default);
+  padding: 14px;
+  border: 1px solid var(--color-primary-light);
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: var(--main-font-family);
+}
+
+input:focus,
+textarea:focus {
+  border: none;
+  outline: 1px solid var(--color-primary);
 }
