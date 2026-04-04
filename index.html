@@ -34,7 +34,7 @@
         <ul>
           <li><a href="/#inicio">Inicio</a></li>
           <li><a href="/#sobre-nosotros">Nosotros</a></li>
-          <li><a href="#">Paquetes</a></li>
+          <li><a href="/#promociones">Promociones</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
       </nav>
@@ -47,14 +47,14 @@
           Haz tus maletas mientras nosotros cambiamos las reglas del viaje
         </h4>
         <div class="group-btn">
-          <a class="btn auxiliar-btn" href="#">Ver destinos</a>
+          <a class="btn auxiliar-btn" href="/#promociones">Ver destinos</a>
           <a class="btn btn-cta" href="#">Reservar</a>
         </div>
       </section>
       <section class="about-us" id="sobre-nosotros">
         <div class="about-content">
           <span class="section-tag">Sobre nosotros</span>
-          <h2>Nuestra filosofía</h2>
+          <h2 class="section-title-slogan">Nuestra filosofía</h2>
           <p>
             En Viajes Delmiro llevamos más de 20 años ayudando a familias a
             descubrir el mundo. Nuestra filosofía es simple: los adultos viajan
@@ -72,9 +72,11 @@
           />
         </div>
       </section>
-      <section class="promo-section" id="paquetes">
+      <section class="promo-section" id="promociones">
         <span class="section-tag">Promociones</span>
-        <h2>Vuela con nosotros y que los niños paguen</h2>
+        <h2 class="section-title-slogan">
+          Vuela con nosotros y que los niños paguen
+        </h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus
           mauris, dignissim ut mauris at, interdum laoreet orci. Nunc mattis
@@ -101,7 +103,7 @@
                 </div>
                 <div class="price-info">
                   <p>Desde</p>
-                  <h2 class="price">560€</h2>
+                  <h2 class="price">90€</h2>
                 </div>
               </div>
             </article>
@@ -123,7 +125,7 @@
                 </div>
                 <div class="price-info">
                   <p>Desde</p>
-                  <h2 class="price">560€</h2>
+                  <h2 class="price">85€</h2>
                 </div>
               </div>
             </article>
@@ -145,7 +147,7 @@
                 </div>
                 <div class="price-info">
                   <p>Desde</p>
-                  <h2 class="price">560€</h2>
+                  <h2 class="price">85€</h2>
                 </div>
               </div>
             </article>
@@ -167,7 +169,7 @@
                 </div>
                 <div class="price-info">
                   <p>Desde</p>
-                  <h2 class="price">560€</h2>
+                  <h2 class="price">720€</h2>
                 </div>
               </div>
             </article>
@@ -189,7 +191,7 @@
                 </div>
                 <div class="price-info">
                   <p>Desde</p>
-                  <h2 class="price">560€</h2>
+                  <h2 class="price">450€</h2>
                 </div>
               </div>
             </article>
@@ -211,7 +213,7 @@
                 </div>
                 <div class="price-info">
                   <p>Desde</p>
-                  <h2 class="price">560€</h2>
+                  <h2 class="price">90€</h2>
                 </div>
               </div>
             </article>
@@ -233,7 +235,7 @@
                 </div>
                 <div class="price-info">
                   <p>Desde</p>
-                  <h2 class="price">560€</h2>
+                  <h2 class="price">520€</h2>
                 </div>
               </div>
             </article>
@@ -251,11 +253,88 @@
                 </div>
                 <div class="price-info">
                   <p>Desde</p>
-                  <h2 class="price">560€</h2>
+                  <h2 class="price">630€</h2>
                 </div>
               </div>
             </article>
           </div>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="contact-section-content">
+          <span class="section-tag-inverse">Contacto</span>
+          <h2 class="section-title-slogan">¿Tienes dudas?</h2>
+          <p>
+            Estamos aquí para ayudarte. Escríbenos y te responderemos lo antes
+            posible.
+          </p>
+          <div class="form-section">
+            <form action="" method="POST">
+              <div class="form-group">
+                <div>
+                  <label for="nombre"
+                    >Nombre <span aria-hidden="true">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Juan"
+                    required
+                    autocomplete="given-name"
+                  />
+                </div>
+                <div>
+                  <label for="apellido">Apellido</label>
+                  <input
+                    type="text"
+                    id="apellido"
+                    name="apellido"
+                    placeholder="García"
+                    autocomplete="family-name"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email"
+                  >Correo electrónico <span aria-hidden="true">*</span></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="juan@email.com"
+                  required
+                  autocomplete="email"
+                />
+                <label for="telefono"
+                  >Teléfono <span aria-hidden="true">*</span></label
+                >
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  placeholder="+34 600 000 000"
+                  required
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje">Razón o mensaje</label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  rows="4"
+                  placeholder="Cuéntanos en qué podemos ayudarte..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-cta">Enviar</button>
+            </form>
+          </div>
+          <div></div>
         </div>
       </section>
     </main>

@@ -56,6 +56,16 @@ p {
   font-weight: 500;
 }
 
+.section-tag-inverse {
+  width: fit-content;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-radius: var(--border-radius-default);
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 header {
   max-width: 1240px;
   margin: 0 auto;
@@ -177,6 +187,10 @@ nav ul li a {
   align-self: center;
 }
 
+.section-title-slogan {
+  color: var(--color-primary);
+}
+
 .promo-content {
   display: flex;
   flex-direction: row;
@@ -269,4 +283,36 @@ nav ul li a {
 
 .price {
   color: var(--color-primary);
+  font-size: 1.75rem;
+}
+
+.contact-section {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.contact-section-content {
+  max-width: var(--max-width-default);
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-section-content h2 {
+  color: var(--color-white);
+}
+
+.form-section {
+  width: 50%;
+  background-color: var(--color-white);
+  padding: 2rem;
+  color: var(--color-primary);
+  border-radius: var(--border-radius-default);
+}
+
+.form-section input {
+  border-radius: var(--border-radius-default);
+  padding: 8px;
 }
