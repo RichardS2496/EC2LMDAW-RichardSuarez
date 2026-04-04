@@ -34,7 +34,8 @@ body {
 
 h1 {
   font-size: var(--fs-xl);
-  line-height: 3rem;
+  line-height: 4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 h2 {
   font-size: var(--fs-lg);
@@ -45,6 +46,7 @@ h3 {
 h4 {
   font-size: var(--fs-sm);
   font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 p {
   font-size: var(--fs-base);
@@ -154,18 +156,32 @@ nav ul li:hover {
 
 .main-hero {
   max-width: var(--max-width-default);
+  min-height: 560px;
   margin: 0 auto;
   background-image: url("../src/img/main_hero.jpg");
   background-repeat: no-repeat;
-  height: 580px;
   border-radius: var(--border-radius-default);
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.main-hero-content {
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  color: var(--color-primary);
+  color: var(--color-white);
   text-wrap: balance;
+}
+
+.main-hero-img {
+  display: flex;
+}
+.main-hero-img img {
+  max-width: 500px;
+  align-self: flex-end;
 }
 
 .group-btn {
