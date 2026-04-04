@@ -13,6 +13,7 @@
   --color-primary-muted: #fafafa;
   --color-white: #ffffff;
   --text-color-null-transparency: #ffffff00;
+  --footer-color-bg: #242424;
   --test-color: red;
   --fs-xl: 3rem;
   --fs-lg: 2rem;
@@ -411,4 +412,21 @@ input:focus,
 textarea:focus {
   border: none;
   outline: 1px solid var(--color-primary);
+}
+
+footer {
+  background-color: var(--footer-color-bg);
+}
+
+.footer-content {
+  max-width: var(--max-width-default);
+  color: var(--color-white);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: var(--color-primary-muted);
+  font-weight: 600;
 }
