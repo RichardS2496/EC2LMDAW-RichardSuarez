@@ -402,6 +402,12 @@ nav ul li:hover {
   align-self: start;
 }
 
+.item-info {
+  font-size: 1rem;
+  text-align: start;
+  align-self: start;
+}
+
 .text-logo-footer {
   line-height: 2rem;
 }
@@ -505,7 +511,6 @@ footer {
   pointer-events: auto;
 }
 
-/* ── TABLET (max 1024px) ── */
 @media (max-width: 1024px) {
   header,
   .main-hero,
@@ -588,7 +593,6 @@ footer {
   }
 }
 
-/* ── MÓVIL (max 768px) ── */
 @media (max-width: 768px) {
   h1 {
     font-size: var(--fs-lg);
