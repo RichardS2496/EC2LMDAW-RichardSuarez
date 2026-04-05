@@ -13,3 +13,9 @@ window.addEventListener("scroll", () => {
     btnBackStart.classList.remove("visible");
   }
 });
+
+const btnMenu = document.getElementById("btn-responsive");
+const nav = document.querySelector("nav");
+btnMenu.addEventListener("click", () => {
+  nav.classList.toggle("visible");
+});
